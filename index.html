@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #0077cc, #005fa3);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005fa3;
+            padding: 0.75rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: #0077cc;
+        }
+        .category-button {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #0077cc, #005fa3);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .category-button:hover {
+            background: #003d73;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+            .category-button {
+                padding: 0.8rem 2rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <p>Your daily dose of interesting articles</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Select a Category</h2>
+        <a href="technology/index.html" class="category-button">Technology</a>
+        <a href="lifestyle/index.html" class="category-button">Lifestyle</a>
+        <a href="education/index.html" class="category-button">Education</a>
+        <a href="entertainment/index.html" class="category-button">Entertainment</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Personal Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
